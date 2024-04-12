@@ -16,7 +16,7 @@ os.environ['OPENAI_API_KEY'] = ''
 os.environ['SERPAPI_API_KEY'] = ''
 model = OpenAI(temperature=0.7)
 tools = load_tools(['serpapi'],llm=model)
-st.title("Finance")
+st.title("Chat News")
 st.sidebar.title("New's Articles URL")
 urls_list = []
 for i in range(3):
